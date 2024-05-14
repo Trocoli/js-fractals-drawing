@@ -4,8 +4,8 @@ body {
   
   canvas {
     position : absolute;
-    top      : 0px;
-    left     : 0px;
+    top      : 5px;
+    left     : 5px;
   }
   
   h1 {
