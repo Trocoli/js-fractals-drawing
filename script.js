@@ -67,10 +67,10 @@ var fractal = document.getElementById("fractal"),
   bD = 5;
 fCtx.strokeStyle = "#99FFFF";
 fCtx.fillStyle = "rgba( 0, 0, 0, .05 )";
-fCtx.lineWidth = 2;
+fCtx.lineWidth = 4;
 
 cCtx.strokeStyle = "#99FFFF";
-cCtx.lineWidth = 2;
+cCtx.lineWidth = 3;
 
 window.requestAnimFrame = (function () {
   return (
@@ -111,7 +111,7 @@ function render() {
     "#" + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).substr(1);
 
   // partially erase the line
-  if (!(++rCount % 20)) {
+  if (!(++rCount % 40)) {
     fCtx.fillRect(0, 0, width, height);
   }
 
